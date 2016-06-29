@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+	<title>Kalkulator napiwków</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+
+<div id="container">
+
+
+	<h1>Kalkulator napiwków</h1>
+
+	
+	<div id="calculator">
+		
+		
+		<form>
+
+
+			<label>				
+				Ile wynosi rachunek?<br>
+				PLN<input type="text" id="billAmount"></input>
+			</label>
+
+			<label>			
+				Oceń obsługe<br>
+				<select id="serviceQuality">
+					<option disabled selected value="0">-- Wybierz opcję --</option>
+					<option value="0.3">30% - Znakomita</option>
+					<option value="0.2">20% - Dobra</option>
+					<option value="0.15">15% - OK</option>
+					<option value="0.10">10% - Zła</option>
+					<option value="0.05">5% - Okropna</option>
+				</select>
+			</label>
+
+			<label>
+				Ile osób dzieli rachunek?<br>
+				<input type="text" id="totalPeople">osób
+			</label>
+
+			<button type="button" id="calculate" >Oblicz!</button>
+
+
+		</form>
+
+
+	</div><!-- calculator -->
+
+
+	<div id="totalTip">
+		
+		<small id="aboveResult">Napiwek wynosi</small><span id="currency">PLN&nbsp;</span><span id="tipResult">0.00</span>
+		<small id="each">od osoby</small>
+
+	</div><!-- totalTip -->
+
+
+</div><!-- container -->
+
+
+<script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+
+
+</html>

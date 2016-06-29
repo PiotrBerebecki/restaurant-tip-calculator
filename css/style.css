@@ -1,0 +1,132 @@
+html {
+	width: 100%;
+	min-height: 100%;
+}
+
+body {
+	background: url(../img/background.jpg) center center no-repeat;
+	background-size: cover;
+	font-family: arial;
+}
+
+#container {
+	max-width: 400px;
+	margin: 80px auto;
+	background: url('../img/paper-pattern.jpg') top left repeat;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 8px 0px #a09a8c;
+}
+
+@media screen and (max-width:425px) and (min-width:1px) {
+	#container {
+	width: 100%;
+	margin: 10px auto;
+	padding: 10px 20px;
+	}
+}
+
+h1 {
+	text-align: center;
+	color: #363636;
+	border-bottom: solid 1px #b0b0b0;
+	padding-bottom: 12px;
+}
+
+form {
+	text-align: left;
+}
+
+form label {
+	display: block;
+	margin: 20px 0;
+}
+
+@media screen and (max-width:425px) and (min-width:1px) {
+	form label {
+		margin: 12px 0;
+	}
+}
+
+form input[type="text"] {
+	width: 70px;
+	padding: 8px;
+	margin: 10px 0 10px 10px;
+	border-radius: 5px;
+	border: none;
+	font-size: 100%;
+}
+
+@media screen and (max-width:425px) and (min-width:1px) {
+	form input[type="text"] {
+		margin: 4px 0 4px 10px;
+	}
+}
+
+form select {
+	padding: 8px;
+	margin: 10px 0;
+	border-radius: 5px;
+	border: none;
+	font-size: 100%;
+}
+
+@media screen and (max-width:425px) and (min-width:1px) {
+	form select {
+		margin: 4px 0;
+	}
+}
+
+#totalPeople {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+
+button {
+	width: 100%;
+	background: #00baff;
+	border: solid 1px #3da0c4;
+	padding: 16px;
+	font-size: 100%;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	/* border-radius: 5px; */
+}
+
+button:hover {
+	background: #00adec;
+	box-shadow: 0px 1px 2px 1px #4b4b4b;
+}
+
+button:active {
+	background: #00bbff;
+	box-shadow:inset 0px 0px 1px 1px #00688f;
+}
+
+#totalTip {
+	text-align: center;
+	margin: 25px 0 0;
+}
+
+@media screen and (max-width:425px) and (min-width:1px) {
+	#totalTip {
+		margin: 10px 0 0;
+	}
+}
+
+#currency, #tipResult {
+	font-weight: bold;
+	font-size: 200%;
+}
+
+#aboveResult {
+	display: block;
+	margin-bottom: 7px;
+}
+
+#each {
+	display: block;
+	margin-top: 4px;
+}
